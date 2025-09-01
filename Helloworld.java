@@ -6,7 +6,7 @@ public class Helloworld {
     public static void main(String[] args) throws Exception {
         
         String content = new String(java.nio.file.Files.readAllBytes(
-                java.nio.file.Paths.get("json/input.json"))); 
+                java.nio.file.Paths.get("json/input2.json"))); 
         JSONObject json = new JSONObject(content);
 
         int n = json.getJSONObject("keys").getInt("n");
